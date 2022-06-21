@@ -12,7 +12,7 @@ public class Supplier {
 
     @Override
     public String toString() {
-        return this.name + ", " + this.cnpj + ", " + this.phone;
+        return this.id + " - " + this.name;
     }
 }
 

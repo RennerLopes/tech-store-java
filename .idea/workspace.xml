@@ -4,10 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f069347a-7caa-437b-bc90-88da7cdc446e" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="f069347a-7caa-437b-bc90-88da7cdc446e" name="Changes" comment="Created class Supplier and SupplierDao">
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/femass/controller/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/femass/controller/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/femass/controller/SupplierController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/femass/dao/CategoryDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/femass/model/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/Category.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/Supplier.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/femass/EntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/femass/EntryPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/femass/controller/FXMLController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/femass/model/Supplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/femass/model/Supplier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/Scene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/Main.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +27,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -28,6 +38,7 @@
   <component name="GithubPullRequestsUISettings">
     <option name="recentSearchFilters">
       <list>
+        <option value="state:open" />
         <option value="state:" />
         <option value="state:closed" />
       </list>
@@ -48,13 +59,24 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/rennerlopes/Documents/Femass/6 período/Programação de Computadores 3/N2 - Loja de informática/Tech shop/src/main/resources/fxml",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.SupplierTest">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/fxml" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="br.edu.femass.controller" />
+      <recent name="br.edu.femass.dao" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.br.edu.femass.Main">
     <configuration name="SupplierTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.edu.femass.testes.SupplierTest" />
       <module name="Tech shop" />
@@ -83,8 +105,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SupplierTest" />
         <item itemvalue="Application.br.edu.femass.Main" />
+        <item itemvalue="Application.SupplierTest" />
       </list>
     </recent_temporary>
   </component>
@@ -96,7 +118,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1655669355655</updated>
-      <workItem from="1655669358325" duration="11397000" />
+      <workItem from="1655669358325" duration="12571000" />
+      <workItem from="1655767784562" duration="11062000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1655674410503</created>
@@ -105,7 +128,21 @@
       <option name="project" value="LOCAL" />
       <updated>1655674410504</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added jdbc postgres in pom.xml and created Dao, DaoPostegres for connection with DB.">
+      <created>1655685146595</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1655685146595</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Created class Supplier and SupplierDao">
+      <created>1655685335963</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1655685335963</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +173,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Added jdbc postgres in pom.xml and created Dao, DaoPostegres for connection with DB." />
+    <MESSAGE value="Created class Supplier and SupplierDao" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created class Supplier and SupplierDao" />
   </component>
 </project>
