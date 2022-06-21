@@ -4,19 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f069347a-7caa-437b-bc90-88da7cdc446e" name="Changes" comment="Created class Supplier and SupplierDao">
+    <list default="true" id="f069347a-7caa-437b-bc90-88da7cdc446e" name="Changes" comment="class supplier created with the controller and fxml, and the main.fxml modified to have a central menu">
       <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/femass/controller/CategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/femass/controller/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/femass/controller/SupplierController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/femass/dao/CategoryDao.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/femass/model/Category.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/Category.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/Supplier.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/femass/EntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/femass/EntryPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/femass/controller/FXMLController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/femass/model/Supplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/femass/model/Supplier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/Scene.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/Main.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +111,7 @@
       <option name="presentableId" value="Default" />
       <updated>1655669355655</updated>
       <workItem from="1655669358325" duration="12571000" />
-      <workItem from="1655767784562" duration="11062000" />
+      <workItem from="1655767784562" duration="11376000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1655674410503</created>
@@ -142,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655685335963</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="class supplier created with the controller and fxml, and the main.fxml modified to have a central menu">
+      <created>1655796002638</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1655796002638</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,6 +174,7 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Added jdbc postgres in pom.xml and created Dao, DaoPostegres for connection with DB." />
     <MESSAGE value="Created class Supplier and SupplierDao" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created class Supplier and SupplierDao" />
+    <MESSAGE value="class supplier created with the controller and fxml, and the main.fxml modified to have a central menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="class supplier created with the controller and fxml, and the main.fxml modified to have a central menu" />
   </component>
 </project>
