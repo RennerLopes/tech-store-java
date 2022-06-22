@@ -1,27 +1,16 @@
 package br.edu.femass.controller;
 
-import br.edu.femass.dao.CategoryDao;
-import br.edu.femass.model.Category;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
-import javafx.scene.control.ListView;
-import javafx.scene.control.TextField;
-import javafx.scene.input.KeyEvent;
-import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.ResourceBundle;
 
 public class MainController implements Initializable {
@@ -31,6 +20,22 @@ public class MainController implements Initializable {
 
     @FXML
     private Button BtnSuppliers;
+
+    @FXML
+    private Button BtnClients;
+
+    @FXML
+    private Button BtnProducts;
+
+    @FXML
+    void BtnProducts_Action(ActionEvent event) {
+        openScreen("Product", "Produtos");
+    }
+
+    @FXML
+    void BtnClients_Action(ActionEvent event) {
+        openScreen("Client", "Clientes");
+    }
 
     @FXML
     void BtnCategories_Action(ActionEvent event) {
