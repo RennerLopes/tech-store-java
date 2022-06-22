@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f069347a-7caa-437b-bc90-88da7cdc446e" name="Changes" comment="class supplier created with the controller and fxml, and the main.fxml modified to have a central menu">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/femass/controller/CategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/femass/dao/CategoryDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/femass/model/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/Category.fxml" afterDir="false" />
+    <list default="true" id="f069347a-7caa-437b-bc90-88da7cdc446e" name="Changes" comment="class Client created with the controller, fxml and Dao">
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/femass/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/femass/dao/ProductDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/femass/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/Product.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/femass/EntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/femass/EntryPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/femass/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/femass/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/Main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/Main.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,36 +43,66 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2AoI8Ia0Xhi0niLI8Vem1YXyK5P" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/rennerlopes/Documents/Femass/6 período/Programação de Computadores 3/N2 - Loja de informática/Tech shop/src/main/resources/fxml",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "run.code.analysis.last.selected.profile": "pProject Default"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/rennerlopes/Documents/Femass/6 período/Programação de Computadores 3/N2 - Loja de informática/Tech shop/src/main/resources/fxml&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/fxml" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="br.edu.femass.controller" />
+      <recent name="br.edu.femass.model" />
       <recent name="br.edu.femass.dao" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.br.edu.femass.Main">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="EntryPoint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.edu.femass.EntryPoint" />
+      <module name="Tech shop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.edu.femass.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.edu.femass.Main" />
+      <module name="Tech shop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.edu.femass.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SupplierTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.edu.femass.testes.SupplierTest" />
       <module name="Tech shop" />
@@ -82,22 +116,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="br.edu.femass.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="br.edu.femass.Main" />
-      <module name="Tech shop" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.edu.femass.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.br.edu.femass.Main" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.EntryPoint" />
         <item itemvalue="Application.SupplierTest" />
       </list>
     </recent_temporary>
@@ -111,7 +133,12 @@
       <option name="presentableId" value="Default" />
       <updated>1655669355655</updated>
       <workItem from="1655669358325" duration="12571000" />
-      <workItem from="1655767784562" duration="11376000" />
+      <workItem from="1655767784562" duration="11689000" />
+      <workItem from="1655835224209" duration="1612000" />
+      <workItem from="1655840186662" duration="11619000" />
+      <workItem from="1655874483209" duration="4800000" />
+      <workItem from="1655879431385" duration="3350000" />
+      <workItem from="1655882867244" duration="590000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1655674410503</created>
@@ -141,7 +168,21 @@
       <option name="project" value="LOCAL" />
       <updated>1655796002638</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="class category created with the controller, fxml and Dao">
+      <created>1655796090173</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1655796090173</updated>
+    </task>
+    <task id="LOCAL-00006" summary="class Client created with the controller, fxml and Dao">
+      <created>1655874868693</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1655874868693</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,7 +199,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="HEAD" />
                       </list>
                     </value>
                   </entry>
@@ -175,6 +216,8 @@
     <MESSAGE value="Added jdbc postgres in pom.xml and created Dao, DaoPostegres for connection with DB." />
     <MESSAGE value="Created class Supplier and SupplierDao" />
     <MESSAGE value="class supplier created with the controller and fxml, and the main.fxml modified to have a central menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="class supplier created with the controller and fxml, and the main.fxml modified to have a central menu" />
+    <MESSAGE value="class category created with the controller, fxml and Dao" />
+    <MESSAGE value="class Client created with the controller, fxml and Dao" />
+    <option name="LAST_COMMIT_MESSAGE" value="class Client created with the controller, fxml and Dao" />
   </component>
 </project>
