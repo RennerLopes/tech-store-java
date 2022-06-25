@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f069347a-7caa-437b-bc90-88da7cdc446e" name="Changes" comment="class Client created with the controller, fxml and Dao">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/femass/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/femass/dao/ProductDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/femass/model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/Product.fxml" afterDir="false" />
+    <list default="true" id="f069347a-7caa-437b-bc90-88da7cdc446e" name="Changes" comment="class PurchaseDetail and PurchaseDetailDao created">
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/femass/dao/PurchaseDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/femass/model/Purchase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/femass/EntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/femass/EntryPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/femass/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/femass/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/Main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/Main.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,12 +66,12 @@
       <recent name="$PROJECT_DIR$/src/main/resources/fxml" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="br.edu.femass.dao" />
       <recent name="br.edu.femass.controller" />
       <recent name="br.edu.femass.model" />
-      <recent name="br.edu.femass.dao" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.SupplierTest">
     <configuration name="EntryPoint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.edu.femass.EntryPoint" />
       <module name="Tech shop" />
@@ -118,9 +113,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SupplierTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.EntryPoint" />
-        <item itemvalue="Application.SupplierTest" />
       </list>
     </recent_temporary>
   </component>
@@ -139,6 +134,10 @@
       <workItem from="1655874483209" duration="4800000" />
       <workItem from="1655879431385" duration="3350000" />
       <workItem from="1655882867244" duration="590000" />
+      <workItem from="1655883469113" duration="287000" />
+      <workItem from="1655924744412" duration="1655000" />
+      <workItem from="1656016712777" duration="10939000" />
+      <workItem from="1656093937407" duration="27809000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1655674410503</created>
@@ -182,7 +181,21 @@
       <option name="project" value="LOCAL" />
       <updated>1655874868693</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="class product created with the controller, fxml and Dao">
+      <created>1655883527406</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1655883527406</updated>
+    </task>
+    <task id="LOCAL-00008" summary="class PurchaseDetail and PurchaseDetailDao created">
+      <created>1656182433050</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1656182433050</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,6 +231,8 @@
     <MESSAGE value="class supplier created with the controller and fxml, and the main.fxml modified to have a central menu" />
     <MESSAGE value="class category created with the controller, fxml and Dao" />
     <MESSAGE value="class Client created with the controller, fxml and Dao" />
-    <option name="LAST_COMMIT_MESSAGE" value="class Client created with the controller, fxml and Dao" />
+    <MESSAGE value="class product created with the controller, fxml and Dao" />
+    <MESSAGE value="class PurchaseDetail and PurchaseDetailDao created" />
+    <option name="LAST_COMMIT_MESSAGE" value="class PurchaseDetail and PurchaseDetailDao created" />
   </component>
 </project>
