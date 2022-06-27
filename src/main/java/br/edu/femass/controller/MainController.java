@@ -31,6 +31,22 @@ public class MainController implements Initializable {
     private Button BtnPurchases;
 
     @FXML
+    private Button BtnSale;
+
+    @FXML
+    private Button BtnCashClose;
+
+    @FXML
+    void BtnCashClose_Action(ActionEvent event) {
+        openScreen("CashClosing", "Fechamento de caixa");
+    }
+    @FXML
+    void BtnSale_Action(ActionEvent event) {
+        openScreen("Sale", "Vendas");
+    }
+
+
+    @FXML
     void BtnPurchases_Action(ActionEvent event) {
         openScreen("Purchase", "Compras");
     }
