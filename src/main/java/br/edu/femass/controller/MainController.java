@@ -28,6 +28,14 @@ public class MainController implements Initializable {
     private Button BtnProducts;
 
     @FXML
+    private Button BtnPurchases;
+
+    @FXML
+    void BtnPurchases_Action(ActionEvent event) {
+        openScreen("Purchase", "Compras");
+    }
+
+    @FXML
     void BtnProducts_Action(ActionEvent event) {
         openScreen("Product", "Produtos");
     }

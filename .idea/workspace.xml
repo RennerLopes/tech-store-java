@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f069347a-7caa-437b-bc90-88da7cdc446e" name="Changes" comment="class PurchaseDetail and PurchaseDetailDao created">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/femass/dao/PurchaseDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/edu/femass/model/Purchase.java" afterDir="false" />
+    <list default="true" id="f069347a-7caa-437b-bc90-88da7cdc446e" name="Changes" comment="&quot;Disable&quot; property changed to true of elements">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/CashClosing.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/femass/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/femass/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/Main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/Main.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,31 +48,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/rennerlopes/Documents/Femass/6 período/Programação de Computadores 3/N2 - Loja de informática/Tech shop/src/main/resources/fxml&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/rennerlopes/Documents/Femass/6 período/Programação de Computadores 3/N2 - Loja de informática/Tech shop/src/main/resources/fxml",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.36551723",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "configurable.group.language"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/fxml" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="br.edu.femass.dao" />
       <recent name="br.edu.femass.controller" />
+      <recent name="br.edu.femass.dao" />
       <recent name="br.edu.femass.model" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SupplierTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="EntryPoint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.edu.femass.EntryPoint" />
       <module name="Tech shop" />
@@ -113,8 +115,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SupplierTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.SupplierTest" />
         <item itemvalue="Application.EntryPoint" />
       </list>
     </recent_temporary>
@@ -137,7 +139,10 @@
       <workItem from="1655883469113" duration="287000" />
       <workItem from="1655924744412" duration="1655000" />
       <workItem from="1656016712777" duration="10939000" />
-      <workItem from="1656093937407" duration="27809000" />
+      <workItem from="1656093937407" duration="38046000" />
+      <workItem from="1656210185151" duration="2996000" />
+      <workItem from="1656214051727" duration="10871000" />
+      <workItem from="1656259119203" duration="19595000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1655674410503</created>
@@ -195,7 +200,35 @@
       <option name="project" value="LOCAL" />
       <updated>1656182433050</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="class Purchase and PurchaseDao created">
+      <created>1656192294104</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1656192294104</updated>
+    </task>
+    <task id="LOCAL-00010" summary="    toString changed">
+      <created>1656288453579</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1656288453579</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Purchase fxml and controller created">
+      <created>1656288587452</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1656288587452</updated>
+    </task>
+    <task id="LOCAL-00012" summary="&quot;Disable&quot; property changed to true of elements">
+      <created>1656288759418</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1656288759418</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,6 +266,14 @@
     <MESSAGE value="class Client created with the controller, fxml and Dao" />
     <MESSAGE value="class product created with the controller, fxml and Dao" />
     <MESSAGE value="class PurchaseDetail and PurchaseDetailDao created" />
-    <option name="LAST_COMMIT_MESSAGE" value="class PurchaseDetail and PurchaseDetailDao created" />
+    <MESSAGE value="class Purchase and PurchaseDao created" />
+    <MESSAGE value="    toString changed" />
+    <MESSAGE value="Purchase fxml and controller created" />
+    <MESSAGE value="&quot;Disable&quot; property changed to true of elements" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Disable&quot; property changed to true of elements" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
