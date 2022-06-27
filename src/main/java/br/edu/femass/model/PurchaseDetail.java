@@ -13,11 +13,6 @@ public class PurchaseDetail {
 
     @Override
     public String toString() {
-        return "PurchaseDetail{" +
-                "quantity=" + quantity +
-                ", price=" + price +
-                ", purchase=" + purchase +
-                ", product=" + product +
-                '}';
+        return this.product + " - " + this.quantity + " UN | R$" + this.price;
     }
 }
