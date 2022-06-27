@@ -22,13 +22,13 @@
                 <Button fx:id="BtnCancel" disable="true" layoutX="27.0" layoutY="317.0" mnemonicParsing="false" onAction="#BtnCancel_Action" prefHeight="36.0" prefWidth="92.0" text="Cancelar" />
                 <TextField fx:id="TxtId" disable="true" layoutX="221.0" layoutY="27.0" prefHeight="25.0" prefWidth="161.0" />
                 <Label layoutX="39.0" layoutY="31.0" text="Id" />
-            <TextField fx:id="TxtName" layoutX="122.0" layoutY="69.0" prefHeight="25.0" prefWidth="262.0" />
+            <TextField fx:id="TxtName" disable="true" layoutX="122.0" layoutY="69.0" prefHeight="25.0" prefWidth="262.0" />
             <Label layoutX="41.0" layoutY="73.0" text="Nome" />
-            <TextField fx:id="TxtCpf" layoutX="122.0" layoutY="111.0" prefHeight="25.0" prefWidth="262.0" />
+            <TextField fx:id="TxtCpf" disable="true" layoutX="122.0" layoutY="111.0" prefHeight="25.0" prefWidth="262.0" />
             <Label layoutX="41.0" layoutY="115.0" text="CPF" />
-            <TextField fx:id="TxtPhone" layoutX="122.0" layoutY="155.0" prefHeight="25.0" prefWidth="262.0" />
+            <TextField fx:id="TxtPhone" disable="true" layoutX="122.0" layoutY="155.0" prefHeight="25.0" prefWidth="262.0" />
             <Label layoutX="41.0" layoutY="159.0" text="Telefone" />
-            <TextField fx:id="TxtAddress" layoutX="123.0" layoutY="198.0" prefHeight="25.0" prefWidth="262.0" />
+            <TextField fx:id="TxtAddress" disable="true" layoutX="123.0" layoutY="198.0" prefHeight="25.0" prefWidth="262.0" />
             <Label layoutX="42.0" layoutY="202.0" text="Endereço" />
             </children>
         </Pane>
