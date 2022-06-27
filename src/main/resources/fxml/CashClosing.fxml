@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<HBox xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.femass.controller.CashClosingController">
+    <children>
+        <Pane minHeight="356.0" minWidth="225.0" prefHeight="622.0" prefWidth="387.0">
+            <children>
+                <ListView fx:id="LstPurchase" layoutX="28.0" layoutY="109.0" prefHeight="179.0" prefWidth="331.0" />
+                <Button fx:id="BtnCashClose" layoutX="28.0" layoutY="24.0" mnemonicParsing="false" onAction="#BtnCashClose_Action" prefHeight="36.0" prefWidth="331.0" text="Fechar caixa" />
+            <Label layoutX="133.0" layoutY="550.0" text="Total">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="TxtTotal" layoutX="220.0" layoutY="550.0" prefHeight="30.0" prefWidth="128.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="81.0" text="Compras" />
+            <ListView fx:id="LstSele" layoutX="28.0" layoutY="339.0" prefHeight="179.0" prefWidth="331.0" />
+            <Label layoutX="29.0" layoutY="311.0" text="Vendas" />
+            </children>
+        </Pane>
+    </children>
+</HBox>
