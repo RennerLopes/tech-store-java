@@ -16,6 +16,6 @@ public class Purchase {
 
     @Override
     public String toString() {
-        return this.supplier.getName() + " | " + this.date;
+        return this.supplier.getName() + " | " + this.date + " | R$ " + this.total;
     }
 }

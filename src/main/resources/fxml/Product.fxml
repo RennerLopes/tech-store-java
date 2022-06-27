@@ -28,9 +28,11 @@
             <TextField fx:id="TxtStock" disable="true" editable="false" layoutX="223.0" layoutY="67.0" prefHeight="25.0" prefWidth="161.0" />
             <Label layoutX="41.0" layoutY="71.0" text="Estoque" />
             <Label layoutX="41.0" layoutY="159.0" text="Categoria" />
-            <TextField fx:id="TxtPrice" disable="true" layoutX="224.0" layoutY="198.0" prefHeight="25.0" prefWidth="161.0" />
-            <Label layoutX="42.0" layoutY="202.0" text="Preço" />
+            <TextField fx:id="TxtPurchasePrice" disable="true" layoutX="224.0" layoutY="198.0" prefHeight="25.0" prefWidth="161.0" />
+            <Label layoutX="42.0" layoutY="202.0" text="Preço de Compra" />
             <ComboBox fx:id="CbCategory" disable="true" layoutX="125.0" layoutY="154.0" prefHeight="24.0" prefWidth="262.0" />
+            <TextField fx:id="TxtSalePrice" disable="true" layoutX="224.0" layoutY="238.0" prefHeight="25.0" prefWidth="161.0" />
+            <Label layoutX="42.0" layoutY="242.0" text="Preço de Venda" />
             </children>
         </Pane>
     </children>

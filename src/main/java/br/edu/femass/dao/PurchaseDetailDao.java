@@ -16,7 +16,8 @@ public class PurchaseDetailDao extends DaoPostgres implements Dao<PurchaseDetail
         String sql = "SELECT " +
                 "product.id as product_id, " +
                 "product.name as product_name, " +
-                "product.price as product_price, " +
+                "product.purchasePrice as product_purchasePrice, " +
+                "product.salePrice as product_salePrice, " +
                 "product.stock as product_stock, " +
                 "category.id as category_id, " +
                 "category.name as category_name, " +
@@ -38,7 +39,8 @@ public class PurchaseDetailDao extends DaoPostgres implements Dao<PurchaseDetail
             Product product = new Product();
             product.setId(rs.getLong("product_id"));
             product.setName(rs.getString("product_name"));
-            product.setPrice(rs.getBigDecimal("product_price"));
+            product.setPurchasePrice(rs.getBigDecimal("product_purchasePrice"));
+            product.setSalePrice(rs.getBigDecimal("product_salePrice"));
             product.setStock(rs.getInt("product_stock"));
 
             Category category = new Category();
@@ -69,7 +71,12 @@ public class PurchaseDetailDao extends DaoPostgres implements Dao<PurchaseDetail
         ps.setLong(3, value.getPurchase().getId());
         ps.setLong(4, value.getProduct().getId());
 
+        Product product = value.getProduct();
+        product.setStock(product.getStock() + value.getQuantity());
+
+        new ProductDao().update(product);
         ps.executeUpdate();
+
     }
 
     @Override
@@ -89,6 +96,12 @@ public class PurchaseDetailDao extends DaoPostgres implements Dao<PurchaseDetail
         PreparedStatement ps = getPreparedStatment(sql, false);
         ps.setLong(1, value.getPurchase().getId());
         ps.setLong(2, value.getProduct().getId());
+
+        Product product = value.getProduct();
+        product.setStock(product.getStock() - value.getQuantity());
+
+        new ProductDao().update(product);
         ps.executeUpdate();
+
     }
 }

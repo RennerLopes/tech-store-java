@@ -42,7 +42,10 @@ public class ProductController implements Initializable {
     private TextField TxtId;
 
     @FXML
-    private TextField TxtPrice;
+    private TextField TxtPurchasePrice;
+
+    @FXML
+    private TextField TxtSalePrice;
 
     @FXML
     private TextField TxtStock;
@@ -55,7 +58,8 @@ public class ProductController implements Initializable {
 
     private void cleanScreen() {
         TxtName.setText("");
-        TxtPrice.setText("");
+        TxtPurchasePrice.setText("");
+        TxtSalePrice.setText("");
         TxtStock.setText("");
         CbCategory.setValue(null);
         TxtId.setText("");
@@ -63,7 +67,8 @@ public class ProductController implements Initializable {
 
     private void enableInterface(Boolean include) {
         TxtName.setDisable(!include);
-        TxtPrice.setDisable(!include);
+        TxtPurchasePrice.setDisable(!include);
+        TxtSalePrice.setDisable(!include);
         CbCategory.setDisable(!include);
         BtnSave.setDisable(!include);
         BtnCancel.setDisable(!include);
@@ -76,7 +81,8 @@ public class ProductController implements Initializable {
         Product product = LstItems.getSelectionModel().getSelectedItem();
         if(product == null) return;
         TxtName.setText(product.getName());
-        TxtPrice.setText(product.getPrice().toString());
+        TxtPurchasePrice.setText(product.getPurchasePrice().toString());
+        TxtSalePrice.setText(product.getSalePrice().toString());
         TxtStock.setText(product.getStock().toString());
         CbCategory.setValue(product.getCategory());
         TxtId.setText(product.getId().toString());
@@ -116,11 +122,13 @@ public class ProductController implements Initializable {
     void BtnSave_Action(ActionEvent event) {
         Product product = new Product();
         product.setName(TxtName.getText());
-        product.setPrice(new BigDecimal(TxtPrice.getText()));
+        product.setPurchasePrice(new BigDecimal(TxtPurchasePrice.getText()));
+        product.setSalePrice(new BigDecimal(TxtSalePrice.getText()));
         product.setStock(0);
         product.setCategory(CbCategory.getValue());
-        if (TxtName.getText().equals("") || TxtPrice.getText().equals("") || CbCategory.equals("")) {
+        if (TxtName.getText().equals("") || TxtPurchasePrice.getText().equals("") || TxtSalePrice.getText().equals("") || CbCategory.equals("")) {
             Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+            errorAlert.setContentText("Todos os campos devem ser preenchidos");
             errorAlert.show();
         } else {
             try {

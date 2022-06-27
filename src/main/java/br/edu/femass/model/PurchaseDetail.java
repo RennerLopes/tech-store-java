@@ -13,6 +13,6 @@ public class PurchaseDetail {
 
     @Override
     public String toString() {
-        return this.product + " - " + this.quantity + " UN | R$" + this.price;
+        return this.product.getName() + " - " + this.quantity + " UN | R$" + this.price;
     }
 }

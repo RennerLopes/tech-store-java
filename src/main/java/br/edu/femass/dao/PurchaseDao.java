@@ -44,7 +44,11 @@ public class PurchaseDao extends DaoPostgres implements Dao<Purchase>{
                     "purchaseDetail.quantity, " +
                     "purchaseDetail.price, " +
                     "product.id, " +
-                    "product.name " +
+                    "product.name," +
+                    "product.purchasePrice, " +
+                    "product.stock, " +
+                    "product.id_category, " +
+                    "product.salePrice " +
                     "FROM purchaseDetail, product " +
                     "WHERE purchaseDetail.id_purchase = ? AND " +
                     "purchaseDetail.id_product = product.id";
@@ -63,6 +67,13 @@ public class PurchaseDao extends DaoPostgres implements Dao<Purchase>{
                 Product product = new Product();
                 product.setId(rs2.getLong("id"));
                 product.setName(rs2.getString("name"));
+                product.setStock(rs2.getInt("stock"));
+                product.setSalePrice(rs2.getBigDecimal("salePrice"));
+                product.setPurchasePrice(rs2.getBigDecimal("purchasePrice"));
+
+                Category category = new Category();
+                category.setId(rs2.getLong("id_category"));
+                product.setCategory(category);
 
                 purchaseDetail.setProduct(product);
                 purchaseDetailList.add(purchaseDetail);

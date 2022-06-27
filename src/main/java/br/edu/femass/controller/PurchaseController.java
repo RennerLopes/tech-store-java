@@ -120,7 +120,7 @@ public class PurchaseController implements Initializable {
         Product product = LstProducts.getSelectionModel().getSelectedItem();
         if(product == null) return;
         TxtProduct.setText(product.getName());
-        TxtPrice.setText("R$" + product.getPrice().toString());
+        TxtPrice.setText("R$" + product.getPurchasePrice().toString());
     }
 
     private void refreshList() {
@@ -205,7 +205,7 @@ public class PurchaseController implements Initializable {
         purchaseDetail.setPurchase(purchase);
         purchaseDetail.setProduct(LstProducts.getSelectionModel().getSelectedItem());
         purchaseDetail.setQuantity(Integer.parseInt(TxtQuantity.getText()));
-        purchaseDetail.setPrice(LstProducts.getSelectionModel().getSelectedItem().getPrice());
+        purchaseDetail.setPrice(LstProducts.getSelectionModel().getSelectedItem().getPurchasePrice());
         purchaseDetailList.add(purchaseDetail);
 
         BigDecimal bQuantity = new BigDecimal(purchaseDetail.getQuantity());
