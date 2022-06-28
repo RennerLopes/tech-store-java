@@ -13,6 +13,7 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.Region;
 
 import java.net.URL;
 import java.util.ArrayList;
@@ -94,6 +95,14 @@ public class ClientController implements Initializable {
         LstItems.setItems(clientsOb);
     }
 
+    private void displayAlert(String message) {
+        Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+        errorAlert.setResizable(true);
+        errorAlert.getDialogPane().setMinHeight(Region.USE_PREF_SIZE);
+        errorAlert.setContentText(message);
+        errorAlert.show();
+    }
+
     @FXML
     void BtnCancel_Action(ActionEvent event) {
         enableInterface(false);
@@ -107,6 +116,7 @@ public class ClientController implements Initializable {
             clientDao.delete(client);
         } catch (Exception e) {
             e.printStackTrace();
+            displayAlert(e.getMessage());
         }
 
         refreshList();
@@ -120,13 +130,13 @@ public class ClientController implements Initializable {
         client.setCpf(TxtCpf.getText());
         client.setAddress(TxtAddress.getText());
         if (TxtName.getText().equals("") || TxtPhone.getText().equals("") || TxtCpf.getText().equals("") || TxtAddress.getText().equals("")) {
-            Alert errorAlert = new Alert(Alert.AlertType.ERROR);
-            errorAlert.show();
+            displayAlert("Todos os campos são obrigatórios");
         } else {
             try {
                 clientDao.create(client);
             } catch (Exception e) {
                 e.printStackTrace();
+                displayAlert(e.getMessage());
             }
             refreshList();
             enableInterface(false);

@@ -2,7 +2,6 @@ package br.edu.femass.controller;
 
 import br.edu.femass.dao.CategoryDao;
 import br.edu.femass.model.Category;
-import javafx.beans.Observable;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -14,6 +13,7 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.Region;
 
 import java.net.URL;
 import java.util.ArrayList;
@@ -77,6 +77,14 @@ public class CategoryController implements Initializable {
         LstItems.setItems(categoriesOb);
     }
 
+    private void displayAlert(String message) {
+            Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+            errorAlert.setResizable(true);
+            errorAlert.getDialogPane().setMinHeight(Region.USE_PREF_SIZE);
+            errorAlert.setContentText(message);
+            errorAlert.show();
+    }
+
     @FXML
     void BtnCancel_Action(ActionEvent event) {
         enableInterface(false);
@@ -85,11 +93,13 @@ public class CategoryController implements Initializable {
     @FXML
     void BtnDelete_Action(ActionEvent event) {
         Category category = LstItems.getSelectionModel().getSelectedItem();
+
         if(category == null) return;
         try {
             categoryDao.delete(category);
         } catch (Exception e) {
             e.printStackTrace();
+            displayAlert(e.getMessage());
         }
 
         refreshList();
@@ -100,13 +110,13 @@ public class CategoryController implements Initializable {
         Category category = new Category();
         category.setName(TxtName.getText());
         if (TxtName.getText().equals("")) {
-            Alert errorAlert = new Alert(Alert.AlertType.ERROR);
-            errorAlert.show();
+            displayAlert("Todos os campos devem ser preenchidos");
         } else {
             try {
                 categoryDao.create(category);
             } catch (Exception e) {
                 e.printStackTrace();
+                displayAlert(e.getMessage());
             }
             refreshList();
             enableInterface(false);

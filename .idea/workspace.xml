@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f069347a-7caa-437b-bc90-88da7cdc446e" name="Changes" comment="Project diagram models">
-      <change afterPath="$PROJECT_DIR$/Tech-shop-backup-db" afterDir="false" />
+    <list default="true" id="f069347a-7caa-437b-bc90-88da7cdc446e" name="Changes" comment="Correction of function refreshList LstItems = null before set new items">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/femass/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/femass/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/femass/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/femass/controller/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/femass/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/femass/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/femass/controller/PurchaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/femass/controller/PurchaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/femass/controller/SaleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/femass/controller/SaleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/femass/controller/SupplierController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/femass/controller/SupplierController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,8 +119,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.br.edu.femass.Main" />
-        <item itemvalue="Application.DaoTest" />
         <item itemvalue="Application.EntryPoint" />
+        <item itemvalue="Application.DaoTest" />
       </list>
     </recent_temporary>
   </component>
@@ -141,7 +147,8 @@
       <workItem from="1656214051727" duration="10871000" />
       <workItem from="1656259119203" duration="30831000" />
       <workItem from="1656337132608" duration="2000" />
-      <workItem from="1656344125649" duration="18193000" />
+      <workItem from="1656344125649" duration="23683000" />
+      <workItem from="1656378319852" duration="6009000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1655674410503</created>
@@ -269,7 +276,21 @@
       <option name="project" value="LOCAL" />
       <updated>1656363909713</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Project diagram models">
+      <created>1656364189083</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1656364189083</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Correction of function refreshList LstItems = null before set new items">
+      <created>1656392993701</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1656392993701</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,27 +338,8 @@
     <MESSAGE value="Added PuchasePrice and SalePrice attribute in Product class and adjusted Dao, controller and fxml to have it" />
     <MESSAGE value="Menu &quot;Venda&quot; and &quot;Fechamento de caixa&quot; added in Main screen" />
     <MESSAGE value="Project diagram models" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project diagram models" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/edu/femass/controller/SaleController.java</url>
-          <line>158</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/br/edu/femass/controller/PurchaseController.java</url>
-          <line>125</line>
-          <properties class="br.edu.femass.controller.PurchaseController" method="refreshList">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Correction of function refreshList LstItems = null before set new items" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correction of function refreshList LstItems = null before set new items" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

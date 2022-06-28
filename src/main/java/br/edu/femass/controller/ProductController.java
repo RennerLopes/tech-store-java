@@ -12,6 +12,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.Region;
 
 import java.math.BigDecimal;
 import java.net.URL;
@@ -100,6 +101,14 @@ public class ProductController implements Initializable {
         LstItems.setItems(productsOb);
     }
 
+    private void displayAlert(String message) {
+        Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+        errorAlert.setResizable(true);
+        errorAlert.getDialogPane().setMinHeight(Region.USE_PREF_SIZE);
+        errorAlert.setContentText(message);
+        errorAlert.show();
+    }
+
     @FXML
     void BtnCancel_Action(ActionEvent event) {
         enableInterface(false);
@@ -113,6 +122,7 @@ public class ProductController implements Initializable {
             productDao.delete(product);
         } catch (Exception e) {
             e.printStackTrace();
+            displayAlert(e.getMessage());
         }
 
         refreshList();
@@ -126,15 +136,14 @@ public class ProductController implements Initializable {
         product.setSalePrice(new BigDecimal(TxtSalePrice.getText()));
         product.setStock(0);
         product.setCategory(CbCategory.getValue());
-        if (TxtName.getText().equals("") || TxtPurchasePrice.getText().equals("") || TxtSalePrice.getText().equals("") || CbCategory.equals("")) {
-            Alert errorAlert = new Alert(Alert.AlertType.ERROR);
-            errorAlert.setContentText("Todos os campos devem ser preenchidos");
-            errorAlert.show();
+        if (TxtName.getText().equals("") || TxtPurchasePrice.getText().equals("") || TxtSalePrice.getText().equals("") || CbCategory.getValue() == null) {
+            displayAlert("Todos os campos devem ser preenchidos");
         } else {
             try {
                 productDao.create(product);
             } catch (Exception e) {
                 e.printStackTrace();
+                displayAlert(e.getMessage());
             }
             refreshList();
             enableInterface(false);

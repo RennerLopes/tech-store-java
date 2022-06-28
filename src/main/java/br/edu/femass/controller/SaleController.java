@@ -15,6 +15,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.Region;
 
 import java.math.BigDecimal;
 import java.net.URL;
@@ -139,6 +140,14 @@ public class SaleController implements Initializable {
         LstItems.setItems(salesOb);
     }
 
+    private void displayAlert(String message) {
+        Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+        errorAlert.setResizable(true);
+        errorAlert.getDialogPane().setMinHeight(Region.USE_PREF_SIZE);
+        errorAlert.setContentText(message);
+        errorAlert.show();
+    }
+
     private void refreshProductSelected() {
         ObservableList<SaleDetail> saleDetailListOb = FXCollections.observableArrayList(saleDetailList);
         LstProductsSelected.setItems(saleDetailListOb);
@@ -160,6 +169,7 @@ public class SaleController implements Initializable {
             saleDao.delete(sale);
         } catch (Exception e) {
             e.printStackTrace();
+            displayAlert(e.getMessage());
         }
 
         refreshList();
@@ -172,14 +182,14 @@ public class SaleController implements Initializable {
         sale.setSaleDetailList(saleDetailList);
         sale.setTotal(total);
 
-        if (CbClient.getValue().equals(new Client()) || sale.getSaleDetailList().isEmpty()) {
-            Alert errorAlert = new Alert(Alert.AlertType.ERROR);
-            errorAlert.show();
+        if (CbClient.getValue() == null || sale.getSaleDetailList().isEmpty()) {
+            displayAlert("Todos os campos devem ser preenchidos");
         } else {
             try {
                 saleDao.create(sale);
             } catch (Exception e) {
                 e.printStackTrace();
+                displayAlert(e.getMessage());
             }
             enableInterface(false);
             refreshList();
@@ -212,9 +222,7 @@ public class SaleController implements Initializable {
         saleDetail.setPrice(LstProducts.getSelectionModel().getSelectedItem().getSalePrice());
 
         if (saleDetail.getQuantity() > saleDetail.getProduct().getStock()) {
-            Alert errorAlert = new Alert(Alert.AlertType.ERROR);
-            errorAlert.setContentText("Quantidade informada do item maior que a quantidade em estoque");
-            errorAlert.show();
+            displayAlert("Quantidade informada do item maior que a quantidade em estoque");
         } else {
             saleDetailList.add(saleDetail);
 

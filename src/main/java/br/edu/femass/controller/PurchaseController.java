@@ -12,6 +12,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.Region;
 
 import java.math.BigDecimal;
 import java.net.URL;
@@ -135,7 +136,14 @@ public class PurchaseController implements Initializable {
         ObservableList<Purchase> purchasesOb = FXCollections.observableArrayList(purchases);
         LstItems.setItems(null);
         LstItems.setItems(purchasesOb);
+    }
 
+    private void displayAlert(String message) {
+        Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+        errorAlert.setResizable(true);
+        errorAlert.getDialogPane().setMinHeight(Region.USE_PREF_SIZE);
+        errorAlert.setContentText(message);
+        errorAlert.show();
     }
 
     private void refreshProductSelected() {
@@ -159,6 +167,7 @@ public class PurchaseController implements Initializable {
             purchaseDao.delete(purchase);
         } catch (Exception e) {
             e.printStackTrace();
+            displayAlert(e.getMessage());
         }
         cleanScreen();
         refreshList();
@@ -171,14 +180,14 @@ public class PurchaseController implements Initializable {
         purchase.setPurchaseDetailList(purchaseDetailList);
         purchase.setTotal(total);
 
-        if (CbSupplier.getValue().equals(new Supplier()) || purchase.getPurchaseDetailList().isEmpty()) {
-            Alert errorAlert = new Alert(Alert.AlertType.ERROR);
-            errorAlert.show();
+        if (CbSupplier.getValue() == null || purchase.getPurchaseDetailList().isEmpty()) {
+            displayAlert("Todos os campos devem ser preenchidos");
         } else {
             try {
                 purchaseDao.create(purchase);
             } catch (Exception e) {
                 e.printStackTrace();
+                displayAlert(e.getMessage());
             }
             enableInterface(false);
             refreshList();

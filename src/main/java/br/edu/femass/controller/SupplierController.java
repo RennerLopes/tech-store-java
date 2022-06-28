@@ -13,6 +13,7 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.Region;
 
 import java.net.URL;
 import java.util.ArrayList;
@@ -94,6 +95,14 @@ public class SupplierController implements Initializable {
         LstItems.setItems(suppliersOb);
     }
 
+    private void displayAlert(String message) {
+        Alert errorAlert = new Alert(Alert.AlertType.ERROR);
+        errorAlert.setResizable(true);
+        errorAlert.getDialogPane().setMinHeight(Region.USE_PREF_SIZE);
+        errorAlert.setContentText(message);
+        errorAlert.show();
+    }
+
     @FXML
     void BtnCancel_Action(ActionEvent event) {
         enableInterface(false);
@@ -107,6 +116,8 @@ public class SupplierController implements Initializable {
             supplierDao.delete(supplier);
         } catch (Exception e) {
             e.printStackTrace();
+            displayAlert(e.getMessage());
+
         }
 
         refreshList();
@@ -120,13 +131,14 @@ public class SupplierController implements Initializable {
         supplier.setCnpj(TxtCnpj.getText());
         supplier.setAddress(TxtAddress.getText());
         if (TxtName.getText().equals("") || TxtPhone.getText().equals("") || TxtCnpj.getText().equals("") || TxtAddress.getText().equals("")) {
-            Alert errorAlert = new Alert(Alert.AlertType.ERROR);
-            errorAlert.show();
+            displayAlert("Todos os campos devem ser preenchidos");
+
         } else {
             try {
                 supplierDao.create(supplier);
             } catch (Exception e) {
                 e.printStackTrace();
+                displayAlert(e.getMessage());
             }
             refreshList();
             enableInterface(false);
