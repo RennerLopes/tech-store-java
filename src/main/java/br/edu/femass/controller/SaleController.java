@@ -135,6 +135,7 @@ public class SaleController implements Initializable {
             sales = new ArrayList<>();
         }
         ObservableList<Sale> salesOb = FXCollections.observableArrayList(sales);
+        LstItems.setItems(null);
         LstItems.setItems(salesOb);
     }
 
@@ -171,7 +172,7 @@ public class SaleController implements Initializable {
         sale.setSaleDetailList(saleDetailList);
         sale.setTotal(total);
 
-        if (CbClient.getValue().equals("") || sale.getSaleDetailList().isEmpty()) {
+        if (CbClient.getValue().equals(new Client()) || sale.getSaleDetailList().isEmpty()) {
             Alert errorAlert = new Alert(Alert.AlertType.ERROR);
             errorAlert.show();
         } else {

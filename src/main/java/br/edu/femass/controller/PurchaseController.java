@@ -131,8 +131,11 @@ public class PurchaseController implements Initializable {
         } catch (Exception e) {
             purchases = new ArrayList<>();
         }
+
         ObservableList<Purchase> purchasesOb = FXCollections.observableArrayList(purchases);
+        LstItems.setItems(null);
         LstItems.setItems(purchasesOb);
+
     }
 
     private void refreshProductSelected() {
@@ -157,7 +160,7 @@ public class PurchaseController implements Initializable {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
+        cleanScreen();
         refreshList();
     }
 
@@ -168,7 +171,7 @@ public class PurchaseController implements Initializable {
         purchase.setPurchaseDetailList(purchaseDetailList);
         purchase.setTotal(total);
 
-        if (CbSupplier.getValue().equals("") || purchase.getPurchaseDetailList().isEmpty()) {
+        if (CbSupplier.getValue().equals(new Supplier()) || purchase.getPurchaseDetailList().isEmpty()) {
             Alert errorAlert = new Alert(Alert.AlertType.ERROR);
             errorAlert.show();
         } else {
@@ -184,7 +187,7 @@ public class PurchaseController implements Initializable {
 
     @FXML
     void BtnInclude_Action(ActionEvent event) {
-        //refreshList();
+        refreshList();
         enableInterface(true);
         cleanScreen();
         CbSupplier.requestFocus();
