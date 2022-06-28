@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f069347a-7caa-437b-bc90-88da7cdc446e" name="Changes" comment="Correction of function refreshList LstItems = null before set new items">
+    <list default="true" id="f069347a-7caa-437b-bc90-88da7cdc446e" name="Changes" comment="Added Alertbox for the try catch in controllers">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/femass/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/femass/controller/CategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/femass/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/femass/controller/ClientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/femass/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/femass/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/femass/controller/PurchaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/femass/controller/PurchaseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/femass/controller/SaleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/femass/controller/SaleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/edu/femass/controller/SupplierController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/edu/femass/controller/SupplierController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +142,8 @@
       <workItem from="1656259119203" duration="30831000" />
       <workItem from="1656337132608" duration="2000" />
       <workItem from="1656344125649" duration="23683000" />
-      <workItem from="1656378319852" duration="6009000" />
+      <workItem from="1656378319852" duration="6292000" />
+      <workItem from="1656422841273" duration="1922000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1655674410503</created>
@@ -290,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656392993701</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Added Alertbox for the try catch in controllers">
+      <created>1656394339467</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1656394339467</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,7 +341,8 @@
     <MESSAGE value="Menu &quot;Venda&quot; and &quot;Fechamento de caixa&quot; added in Main screen" />
     <MESSAGE value="Project diagram models" />
     <MESSAGE value="Correction of function refreshList LstItems = null before set new items" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correction of function refreshList LstItems = null before set new items" />
+    <MESSAGE value="Added Alertbox for the try catch in controllers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Alertbox for the try catch in controllers" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
